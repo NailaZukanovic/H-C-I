@@ -1,6 +1,6 @@
 import React from 'react';
 import { StyleSheet, View, Text, TextInput, Image , TouchableOpacity} from 'react-native';
-export default Login = () => {
+export default Login = ({navigation}) => {
 
   return(
     <View style={styles.container}>
@@ -18,7 +18,11 @@ export default Login = () => {
         </Text>
       </TouchableOpacity>
       
-      <TouchableOpacity style={{marginTop:20, borderColor:'#FFC0CB', borderWidth: 1, borderRadius: 15, padding: 10}}>
+      <TouchableOpacity style={{marginTop:20, borderColor:'#FFC0CB', borderWidth: 1, borderRadius: 15, padding: 10}}
+        onPress={() =>
+          navigation.navigate('Register')
+        }
+      >
         <Text style={styles.registerButton} >
           Registruj se
         </Text>
