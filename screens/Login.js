@@ -9,7 +9,7 @@ export default Login = ({navigation}) => {
       <TextInput style={styles.TextInput} placeholder="EMAIL" placeholderTextColor="#003F5C"/>
       </View>
       <View style={styles.inputView} >
-      <TextInput style={styles.TextInput} placeholder="PASSWORD" placeholderTextColor="#003F5C"/>
+      <TextInput style={styles.TextInput} placeholder="PASSWORD" placeholderTextColor="#003F5C" secureTextEntry={true}/>
       </View>
       
       <TouchableOpacity style={styles.loginBtn}>
